@@ -20,7 +20,7 @@ class CarsLeaseApplicationTests {
 		int result = underTest.add(numberOne, numberTwo);
 		
 		//then
-		int expected = 51;
+		int expected = 50;
 		assertThat(result).isEqualTo(expected);
 		//assertEquals("echec",result, expected);
 		
