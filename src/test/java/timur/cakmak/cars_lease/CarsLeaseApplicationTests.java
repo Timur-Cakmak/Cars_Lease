@@ -1,13 +1,35 @@
 package timur.cakmak.cars_lease;
 
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+
 class CarsLeaseApplicationTests {
+	Calculator underTest = new Calculator();
 
 	@Test
-	void contextLoads() {
+	void itShouldAddTwoNumbers() {
+		// given
+		int numberOne = 20;
+		int numberTwo = 30;
+		
+		//when
+		int result = underTest.add(numberOne, numberTwo);
+		
+		//then
+		int expected = 51;
+		assertThat(result).isEqualTo(expected);
+		//assertEquals("echec",result, expected);
+		
+	}
+	
+	class Calculator {
+		int add(int a, int b) {
+			return a + b;
+		}
 	}
 
 }

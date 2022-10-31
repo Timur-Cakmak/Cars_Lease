@@ -1,4 +1,4 @@
-package timur.cakmak.cars_lease.car;
+package timur.cakmak.cars_leaseTests.car;
 
 
 import java.util.Date;
@@ -6,8 +6,9 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import timur.cakmak.cars_lease.car.Car;
 
-public interface CarRepository extends JpaRepository<Car, Long> {
+public interface CarRepositoryTests extends JpaRepository<Car, Long> {
 	List<Car> findByRegistration(String registration);
 	List<Car> findByBrandContaining(String brand);
 	List<Car> findByColor(String color);

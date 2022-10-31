@@ -1,13 +1,15 @@
-package timur.cakmak.cars_lease.car;
+package timur.cakmak.cars_leaseTests.car;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import timur.cakmak.cars_lease.car.Car;
+import timur.cakmak.cars_lease.car.CarRepository;
 
 @Service
-public class CarService {
+public class CarServiceTests {
 	@Autowired
 	CarRepository carRepository;
 

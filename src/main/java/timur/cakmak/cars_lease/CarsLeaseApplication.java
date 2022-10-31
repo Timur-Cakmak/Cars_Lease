@@ -8,10 +8,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import timur.cakmak.cars_lease.car.Car;
-import timur.cakmak.cars_lease.car.CarService;
 import timur.cakmak.cars_lease.contract.Contract;
 import timur.cakmak.cars_lease.contract.ContractService;
+import timur.cakmak.cars_lease.car.Car;
+import timur.cakmak.cars_lease.car.CarService;
 
 @SpringBootApplication
 public class CarsLeaseApplication implements CommandLineRunner{
