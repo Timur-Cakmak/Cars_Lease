@@ -1,10 +1,9 @@
 package timur.cakmak.cars_lease;
 
-import static org.assertj.core.api.Assertions.assertThat;
+//import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 
 class CarsLeaseApplicationTests {
@@ -21,8 +20,8 @@ class CarsLeaseApplicationTests {
 		
 		//then
 		int expected = 50;
-		assertThat(result).isEqualTo(expected);
-		//assertEquals("echec",result, expected);
+		//assertThat(result).isEqualTo(expected);
+		assertEquals("echec",result, expected);
 		
 	}
 	
